@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Agency | Student Project</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+    <style>
+        /* Custom CSS to supplement Bootstrap */
+        body {
+            padding-top: 56px; /* Prevents content from hiding behind fixed navbar */
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://placehold.co/1920x1080/222/555'); /* Placeholder BG */
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Full Viewport Height */
+            color: white;
+        }
+        .service-icon {
+            font-size: 3rem;
+            color: #0d6efd; /* Bootstrap Primary Color */
+        }
+        .portfolio-img {
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .portfolio-img:hover {
+            transform: scale(1.05); /* Slight zoom effect */
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">AGENCY<span class="text-primary">.io</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto"> <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-3 px-4" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section d-flex align-items-center text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-1 fw-bold mb-3">We Build Digital Experiences</h1>
+                    <p class="lead mb-5">We are a creative agency that helps brands grow through design, development, and marketing strategy.</p>
+                    <a href="#portfolio" class="btn btn-primary btn-lg px-5 me-2">View Our Work</a>
+                    <a href="#contact" class="btn btn-outline-light btn-lg px-5">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Services</h2>
+                <p class="text-muted">What we offer to our clients</p>
+            </div>
+            <div class="row g-4"> <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <div class="mb-3"><i class="bi bi-laptop service-icon"></i></div>
+                        <h4 class="card-title">Web Development</h4>
+                        <p class="card-text text-muted">We build responsive, fast, and secure websites using the latest technologies.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <div class="mb-3"><i class="bi bi-palette service-icon"></i></div>
+                        <h4 class="card-title">UI/UX Design</h4>
+                        <p class="card-text text-muted">Modern designs that look great on any device and provide excellent user experience.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <div class="mb-3"><i class="bi bi-graph-up-arrow service-icon"></i></div>
+                        <h4 class="card-title">Digital Marketing</h4>
+                        <p class="card-text text-muted">Grow your audience with our SEO and social media marketing strategies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Latest Projects</h2>
+                <p class="text-muted">Check out some of our recent work</p>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4 col-sm-6">
+                    <img src="https://placehold.co/600x400/0d6efd/ffffff?text=Project+1" class="img-fluid rounded shadow portfolio-img" alt="Project 1">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="https://placehold.co/600x400/6610f2/ffffff?text=Project+2" class="img-fluid rounded shadow portfolio-img" alt="Project 2">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="https://placehold.co/600x400/fd7e14/ffffff?text=Project+3" class="img-fluid rounded shadow portfolio-img" alt="Project 3">
+                </div>
+                 <div class="col-md-4 col-sm-6">
+                    <img src="https://placehold.co/600x400/20c997/ffffff?text=Project+4" class="img-fluid rounded shadow portfolio-img" alt="Project 4">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="https://placehold.co/600x400/ffc107/333333?text=Project+5" class="img-fluid rounded shadow portfolio-img" alt="Project 5">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="https://placehold.co/600x400/dc3545/ffffff?text=Project+6" class="img-fluid rounded shadow portfolio-img" alt="Project 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">AGENCY<span class="text-primary">.io</span></h5>
+                    <p class="small text-secondary">Creating digital masterpieces for brands worldwide.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Contact Us</h5>
+                    <ul class="list-unstyled small text-secondary">
+                        <li><i class="bi bi-geo-alt me-2"></i> 123 Web Dev Lane, Dhaka</li>
+                        <li><i class="bi bi-envelope me-2"></i> hello@agency.io</li>
+                        <li><i class="bi bi-telephone me-2"></i> +880 123 456 7890</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Newsletter</h5>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Your Email">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center small text-secondary">
+                &copy; 2024 Creative Agency. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
