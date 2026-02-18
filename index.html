@@ -8,16 +8,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <a href="#">Mavricks</a>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top"> <!--modern alternative to fixed-top-->
+        
+        <div class="container">
+            <a href="#" class="navbar-brand fw-bold fs-3">MAVRICKS<span class="text-warning">.io</span></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-itm"></button>
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+            <div id="nav-itm" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto"> <!--.ms-auto tricks ul to go to the right side of the navbar-->
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <header>
